@@ -34,14 +34,16 @@ AfterValve9
 
 Your before keyword here would be "Before" and your after keyword would be "After"
 Fill in the base tags with the appropriate tags. Add a type column, and then after that continue adding as many extensions as required. For example TMR[0].PRE or COUNTER.PRE
-+----------------+-------------+--------+---------------------------------+
-|      Name      |  Base Tags  |  Type  |   Extension1   |   Extension2   |
-+----------------+-------------+--------+----------------+----------------+
-|   Mixer 31     | cY[X1]      | Z1     |     Value1A    |     Value2A    |
-+----------------+-------------+--------+----------------+----------------+
-|   Mixer 31     | cY[X2]      | Z2     |     Value1B    |     Value2B    |
-+----------------+-------------+--------+----------------+----------------+
-|   Mixer 11     | cY[X3]      |  Z3    |     Value1C    |     Value2C    |
-+----------------+-------------+--------+----------------+----------------+
-|   Mixer 11     | cY[X4]      |    Z4  |     Value1D    |     Value2D    |
-+----------------+-------------+--------+----------------+----------------+
+
++--------+---------+----+----------+----------+\
+|Name----|Base Tags|Type|Extension1|Extension2|\
++--------+---------+----+----------+----------+\
+|Mixer 31|cY[X1]---|Z1--|Value1A---|Value2A---|\
++--------+---------+----+----------+----------+\
+|Mixer 31|cY[X2]---|Z2--|Value1B---|Value2B---|\
++--------+---------+----+----------+----------+\
+|Mixer 11|cY[X3]---|Z3--|Value1C---|Value2C---|\
++--------+---------+----+----------+----------+\
+|Mixer 11|cY[X4]---|Z4--|Value1D---|Value2D---|\
++--------+---------+----+----------+----------+
+

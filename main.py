@@ -17,8 +17,8 @@ def main():
     
     
     file_name = input("Enter the filename: ")
-
-    before_keyword = input("Enter the before and after keywords. Example for a duplication mixer11 to mixer 31, befre keyword would be 11 and after keyword would be 31.\n\nBefore Keyword: ")
+    print('')
+    before_keyword = input("Enter the before and after keywords. Example for a duplication mixer11 to mixer 31, before keyword would be 11 and after keyword would be 31.\n\nBefore Keyword: ")
     after_keyword = input("After Keyword: ")
 
     # read in the table

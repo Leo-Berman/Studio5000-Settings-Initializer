@@ -17,8 +17,8 @@ def main():
     
     
     file_name = input("Enter the filename: ")
-    print('')
-    before_keyword = input("Enter the before and after keywords. Example for a duplication mixer11 to mixer 31, before keyword would be 11 and after keyword would be 31.\n\nBefore Keyword: ")
+
+    before_keyword = input("Enter the before and after keywords. Example for a duplication mixer11 to mixer 31, befre keyword would be 11 and after keyword would be 31.\n\nBefore Keyword: ")
     after_keyword = input("After Keyword: ")
 
     # read in the table
@@ -26,6 +26,7 @@ def main():
 
     # get the headers should be name of input which should have 
     header = df.columns.values.tolist()[3:]
+    print(df.mode(axis='rows',numeric_only=True).values.tolist())
     modes = df.mode(axis='rows',numeric_only=True).values.tolist()[0][1:]
     names_to_not_change = []
     names_to_change = []
@@ -45,7 +46,7 @@ def main():
     for index, row in df.iterrows():
         if row['Name'] in names_to_change:
             array_index = row['Base Tags'].split("[")[1][:-1]
-            array_indexes += 'MOV(' + array_index + ',local_'+c_type+'[' + str(local_index) + '])'
+            array_indexes += 'MOV(' + array_index + ',local_c'+c_type+'[' + str(local_index) + '])'
             local_index+=1
 
     array_indexes+=';'
